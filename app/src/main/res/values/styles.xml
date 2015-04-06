@@ -1,0 +1,37 @@
+<!--
+<resources>
+
+    &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+    </style>
+
+</resources>
+-->
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="android:editTextStyle">@style/App_EditTextStyle</item>
+        <item name="android:listViewStyle">@style/TransparentListView</item>
+        <item name="android:expandableListViewStyle">@style/TransparentExpandableListView</item>
+    </style>
+
+    <style name="TransparentListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="TransparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="App_EditTextStyle" parent="@android:style/Widget.EditText">
+       <item name="android:layout_height">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+</resources>

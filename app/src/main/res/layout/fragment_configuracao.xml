@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.android.navigationdrawer.MainActivity$HomeFragment" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por favor, entre com o seu nome:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fulano da Silva"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textImeMultiLine"
+        android:imeOptions="actionNext"
+        android:maxLength="40"
+        android:background="@drawable/bg_edittext_default" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agora queremos o seu e-mail:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="exemplo@email.com"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textEmailAddress"
+        android:maxLength="40"
+        android:background="@drawable/bg_edittext_default" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_button_default"
+        />
+
+
+
+</LinearLayout>
