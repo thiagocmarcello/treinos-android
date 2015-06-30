@@ -280,14 +280,15 @@ public class MainActivity extends ActionBarActivity
                         if (!t.getNome().equals(nomeTreino)) {
                             nomeTreino = t.getNome();
                             sb.append("\n");
-                            sb.append(t.getNome());
+                            sb.append(t.getNome().toUpperCase());
                             sb.append("\n");
                         }
+                        sb.append("- ");
                         sb.append(t.getDescricao());
                         sb.append(" ");
-                        sb.append(t.getRepeticao());
-                        sb.append("x de ");
                         sb.append(t.getSequencia());
+                        sb.append("x de ");
+                        sb.append(t.getRepeticao());
                         sb.append("\n");
                     }
                     treinoTextView = (TextView) findViewById(R.id.textTreino);

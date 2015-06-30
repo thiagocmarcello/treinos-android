@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="Sem conexão com o Treino."
         android:id="@+id/textTreino"
         android:layout_below="@+id/section_label"
         android:layout_toRightOf="@+id/section_label"
