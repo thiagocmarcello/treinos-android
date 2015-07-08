@@ -182,10 +182,10 @@ public class MainActivity extends ActionBarActivity
         }
     }
     // REST
-    private static final String ENDERECO = "http://192.168.0.7:8080/Rest/Servico/get?email=";
+    private static final String ENDERECO = "http://192.168.0.5:8080/Rest/Servico/get?email=";
 
     private void buscarTreino() {
-        new HttpAsyncTask().execute(ENDERECO + buscarEmail());
+        new HttpAsyncTask().execute(ENDERECO + buscarEmail().toUpperCase());
     }
 
     private String buscarEmail() {
